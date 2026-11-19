@@ -32,12 +32,12 @@ Acrescente ferramentas conforme tarefas concretas. SSH pode conectar um servidor
 
 ## 5. Avaliar quando vale separar agentes
 
-Para o uso pessoal, Lucas utiliza principalmente o 509. A organização setorial acrescenta PMO, Dev, Infra, RPA e Controladoria. Comece pela demanda e pelo resultado esperado; divida a execução quando houver benefício real de coordenação ou especialização.
+Para o uso pessoal, Lucas utiliza principalmente o 509. Os experimentos acrescentam agentes de planejamento, desenvolvimento, infraestrutura, RPA e revisão documental. Comece pela demanda e pelo resultado esperado; divida a execução quando houver benefício real de coordenação ou especialização.
 
-Chamados entre setores, catálogo de habilidades e workers temporários têm contratos próprios. Seus materiais vão detalhar admissão, seleção de capacidades, critérios de aceite e retorno. O experimento completo tem componentes implementados e integrações ainda parciais.
+Chamados entre agentes, catálogo de habilidades e workers temporários têm contratos próprios. Seus materiais vão detalhar admissão, seleção de capacidades, critérios de aceite e retorno. O experimento completo tem componentes implementados e integrações ainda parciais.
 
 ## Escopo do roteiro
 
-O roteiro apresenta a sequência de preparação. O passo a passo completo do gateway Discord e exemplos públicos de configuração não estão incluídos nesta publicação. Voz, agentes setoriais e chamados têm implementação e documentação próprias.
+O roteiro apresenta a sequência de preparação. O passo a passo completo do gateway Discord e exemplos públicos de configuração não estão incluídos nesta publicação. Voz, agentes especializados e chamados têm implementação e documentação próprias.
 
 A documentação desta etapa não consultou autenticação, memórias privadas ou serviços em execução. Os passos de instalação específicos continuam referenciados na fonte oficial, em vez de presumir os comandos e a configuração de uma versão diferente.

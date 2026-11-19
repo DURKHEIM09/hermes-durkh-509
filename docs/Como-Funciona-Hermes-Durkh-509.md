@@ -26,37 +26,37 @@ A integração com a OpenAI faz parte da experiência descrita por Lucas. Em uma
 
 O histórico de sessões ajuda a retomar conversas e execuções. O versionamento de arquivos e código pertence às práticas Git dos projetos. As consultas de documentos e a execução de rotinas dependem das ferramentas conectadas ao ambiente. O [Factorio — Durkh Coop](https://github.com/DURKHEIM09/factorio-durkh-coop) apresenta um exemplo público dessa integração.
 
-## Agente central, diretores e workers
+## Agente principal, especialistas e workers
 
 ```mermaid
 flowchart TD
     Lucas[Lucas] --> Discord[Discord privado]
     Discord --> Central[Hermes com Durkh 509]
     Central --> Ferramentas[Ferramentas e projetos autorizados]
-    Central --> Demandas[Demandas para setores]
-    Demandas --> Diretores[PMO / Dev / Infra / RPA / Controladoria]
-    Diretores --> Direto[Execução direta]
-    Diretores --> Receitas[Seleção de capacidades e receitas]
+    Central --> Demandas[Demandas por especialidade]
+    Demandas --> Especialistas[Planejamento / Desenvolvimento / Infra / Automação / Revisão]
+    Especialistas --> Direto[Execução direta]
+    Especialistas --> Receitas[Seleção de capacidades e receitas]
     Receitas --> Workers[Agentes temporários]
     Workers --> Verificacao[Verificação e registro de artefatos]
 ```
 
-Esse desenho resume a experiência de interação. Os diretores são pares na arquitetura documentada; a preferência de Lucas por conversar com o 509 não implica uma chefia técnica obrigatória dele sobre todos os setores.
+Esse desenho resume um experimento pessoal de coordenação. Os agentes especializados são pares na arquitetura documentada; o 509 é o principal ponto de interação de Lucas.
 
 | Agente | Papel descrito por Lucas |
 | --- | --- |
 | Durkh 509 | Ponto principal de interação e trabalho pessoal. |
-| Durkh PMO | Estruturação inicial, perguntas, requisitos e padrões de projeto. |
-| Durkh Dev | Desenvolvimento e coordenação das frentes de código. |
-| Durkh Infra | Sistemas, redes, acessos e infraestrutura. |
-| Durkh RPA e Automação | Automações, workflows e robôs. |
-| Durkh Controladoria | Qualidade documental, acompanhamento e fiscalização das áreas. |
+| Planejamento de projetos | Estruturação inicial, perguntas, requisitos e padrões de projeto. |
+| Desenvolvimento | Desenvolvimento e coordenação das frentes de código. |
+| Infraestrutura | Sistemas, redes, acessos e infraestrutura. |
+| RPA e automação | Automações, workflows e robôs. |
+| Revisão documental | Qualidade da documentação e conferência dos resultados. |
 
-Os agentes setoriais são persistentes. Workers temporários executam escopos delimitados e devolvem artefatos para verificação; a arquitetura documentada os trata como folhas, sem autoridade setorial ou memória global própria.
+Os agentes especializados são persistentes. Workers temporários executam escopos delimitados e devolvem artefatos para verificação; a arquitetura documentada os trata como folhas, sem autoridade de coordenação ou memória global própria.
 
 ## Chamados, habilidades e conhecimento
 
-A entrada documentada de chamados usa contrato/CLI, integração n8n, API Python de admissão e Kanban Hermes. O Kanban mantém o estado autoritativo; o Discord apresenta threads e atualizações. A DKR Control API inclui outbox, retry e deduplicação. A referência ao Jira é uma analogia de uso.
+A entrada documentada de chamados usa contrato/CLI, integração n8n, API Python de admissão e Kanban Hermes. O Kanban mantém o estado autoritativo; o Discord apresenta threads e atualizações. A API de coordenação de tarefas e eventos inclui outbox, retry e deduplicação. A referência ao Jira é uma analogia de uso.
 
 O acervo de habilidades reúne skills, personas e referências curadas. Sua seleção pode compor receitas versionadas com ferramentas, raízes permitidas, critérios de aceite e hashes. O fluxo registrado é **preparar → delegar → verificar → registrar**. Estar no catálogo não equivale a instalar ou ativar tudo no agente.
 
@@ -64,7 +64,7 @@ A documentação registra consulta lexical FTS5 no conhecimento. A organização
 
 ## Estágio documentado
 
-Há registro de um canário PMO → Dev → MCP → Discord, recuperação de falha do n8n e um canário SQL com worker temporário. A integração geral entre chamado, receita, execução e progresso ainda tem partes pendentes nos documentos. A experiência relatada com delegação simultânea permanece identificada como relato de Lucas.
+Há registro de um teste de planejamento → desenvolvimento → MCP → Discord, recuperação de falha do n8n e um teste SQL com worker temporário. A integração geral entre chamado, receita, execução e progresso ainda tem partes pendentes nos documentos. A experiência relatada com delegação simultânea permanece identificada como relato de Lucas.
 
 O Hermes Control 2.0 documenta Contexto, Visão global, Projetos e Ações. A interface de voz é um projeto complementar, com canário funcional e pendências de latência, naturalidade e interrupção. Esses componentes serão detalhados em seus próprios materiais.
 
